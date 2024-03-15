@@ -34,9 +34,8 @@ def menu():
     print("\n3 -> Instalar Sxhkd ")
     print("\n4 -> Instalar Picom ")
     print("\n5 -> Instalar Polybar ")
-    print("\n6 -> Instalar Temas ")
-    print("\n7 -> Instalar Todo ")
-    print("\n8 -> Salir ")
+    print("\n6 -> Instalar Todo ")
+    print("\n7 -> Salir ")
 
     option = input("\n-->> ")
 
@@ -51,15 +50,12 @@ def menu():
     if option == "5":
         polybar()
     if option == "6":
-        temas()
-    if option == "7":
         dependecias()
         bspwm()
         sxhkd()
         picom()
         polybar()
-        temas()
-    if option == "8":
+    if option == "7":
         exit()
 
 def dependecias():
@@ -162,12 +158,6 @@ def polybar():
 
     print("\n[+] Polybar Instalado [+]\n")
 
-def temas():
-    green()
-
-    # Temas 
-    os.system("python3 Themes.py")
-    
 if __name__ == '__main__':
     id = os.getuid()
 

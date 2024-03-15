@@ -11,19 +11,9 @@
 1 . Clonamos el sugiente repositorio:
 
 ```bash
-git clone 
-```
-
-```bash
-cd 
-```
-
-```bash
-python3 install.py
-```
-
-```bash
-python3 theme.py
+git clone https://github.com/rrmx/AutoBspwm.git
+cd AutoBspwm/
+python3 main.py
 ```
 
 ## Temas
