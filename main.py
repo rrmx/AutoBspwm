@@ -58,7 +58,6 @@ def menu():
 
 def kali_linux():
     green()
-    print("[+] [+]\n")
 
     # Instalcion y temas de kali linx
     expback = input("\n Kali Linux ( 1 --> Instalacion )  ( 2 --> Temas ) ( 3 --> Todo ). 1/2/3 -> ")
@@ -73,19 +72,13 @@ def kali_linux():
         os.system("python3 Install/kali.py")
         os.system("")
 
-    print("[+] [+]\n")
-
 def parrot_os():
     green()
-    print("[+] \n")
 
-    print("[+] ")
 
 def arch_linux():
     green()
-    print("[+] \n")
 
-    print("[+] ")
 
 if __name__ == '__main__':
     id = os.getuid()

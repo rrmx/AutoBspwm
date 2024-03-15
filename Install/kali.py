@@ -73,7 +73,7 @@ def dependecias():
     # Dependencias polybar
     os.system("sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev -y")
     os.system("sudo apt install python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev -y")
-    os.system("sudo apt install libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libuv1-dev libnl-genl-3-dev -y")
+    os.system("sudo apt install libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libuv1-dev libnl-genl-3-dev libepoxy-dev libxcb-dpms0 libxcb-dpms0-dev -y")
     os.system("sudo apt install libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev libssl-dev libcurl4-openssl-dev -y")
 
     # Dependencias picom
