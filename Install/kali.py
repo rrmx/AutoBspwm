@@ -26,9 +26,9 @@ def white():
     stdout.write(WHITE)
 
 def menu():
-    red()
-    print("\n[+] Selecciona lo que quieres instalar [+]")
     blue()
+    print("\n[+] Selecciona lo que quieres instalar [+]")
+    white()
     print("\n1 -> Instalar Dependencias ")
     print("\n2 -> Instalar Bspwm ")
     print("\n3 -> Instalar Sxhkd ")
@@ -59,7 +59,7 @@ def menu():
         exit()
 
 def dependecias():
-    red()
+    blue()
     print("\n[+] Instalando Dependencias [+]")
     green()
     print("\n")
@@ -82,11 +82,11 @@ def dependecias():
     os.system("sudo apt install libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev -y")
     os.system("sudo apt install libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3 libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev -y")
 
-    red()
+    blue()
     print("\n[+] Dependencias Instaladas [+]")
 
 def bspwm():
-    red()
+    blue()
     print("\n[+] Instalando bspwm [+]\n")
     green()
     print("\n")
@@ -106,7 +106,7 @@ def bspwm():
     print("\n[+] Bspwm Instalado [+]")
 
 def sxhkd():
-    red()
+    blue()
     print("\n[+] Instalando sxhkd [+]")
     green()
     print("\n")
@@ -122,11 +122,11 @@ def sxhkd():
     # Elimina los archivos de sxhkd
     os.system("sudo rm -r *.o *.md contrib doc examples LICENSE Makefile Sourcedeps src sxhkd  VERSION")
 
-    red()
+    blue()
     print("\n[+] Sxhkd Instalado [+]")
 
 def picom():
-    red()
+    blue()
     print("\n[+] Instalando picom [+]")
     green()
     print("\n")

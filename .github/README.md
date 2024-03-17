@@ -11,7 +11,7 @@
 1 . Clonamos el sugiente repositorio:
 
 ```bash
-git clone https://github.com/rrmx/AutoBspwm.git
+git clone https://github.com/rrmx/AutoBspwm
 cd AutoBspwm/
 python3 main.py
 ```
