@@ -1,6 +1,4 @@
 import os
-import colorama
-from colorama import Fore, Back, Style
 from sys import stdout
 
 def red():
@@ -62,9 +60,9 @@ def menu():
 
 def dependecias():
     red()
-    print("\n[+] Instalando Dependencias [+]\n")
-
-    white()
+    print("\n[+] Instalando Dependencias [+]")
+    green()
+    print("\n")
     # Actualizar sistema
     os.system("sudo apt update -y")
     os.system("sudo apt upgrade -y")
@@ -84,12 +82,14 @@ def dependecias():
     os.system("sudo apt install libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev -y")
     os.system("sudo apt install libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3 libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev -y")
 
+    red()
     print("\n[+] Dependencias Instaladas [+]")
-    
-def bspwm():
-    green()
-    print("\n[+] Instalando bspwm [+]\n")
 
+def bspwm():
+    red()
+    print("\n[+] Instalando bspwm [+]\n")
+    green()
+    print("\n")
     # Clona el repo de bspwm
     os.system("git clone https://github.com/baskerville/bspwm.git")
     os.system("mv bspwm/* .")
