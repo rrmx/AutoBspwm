@@ -28,7 +28,7 @@ def white():
 def menu():
     blue()
     print("\n[+] Selecciona lo que quieres instalar [+]")
-    white()
+    green()
     print("\n1 -> Instalar Dependencias ")
     print("\n2 -> Instalar Bspwm ")
     print("\n3 -> Instalar Sxhkd ")
@@ -69,7 +69,7 @@ def dependecias():
 
     # Dependencias bspwm y sxhkd
     os.system("sudo apt install build-essential git vim libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev -y")
-    os.system("sudo apt install libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev libxinerama1 libxinerama-dev bspwm -y")
+    os.system("sudo apt install libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev libxinerama1 libxinerama-dev -y")
 
     # Dependencias polybar
     os.system("sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev -y")
@@ -81,6 +81,9 @@ def dependecias():
     os.system("sudo apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev -y")
     os.system("sudo apt install libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev -y")
     os.system("sudo apt install libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3 libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev -y")
+
+    # Otros
+    os.system("sudo apt install bspwm sxhkd picom polybar -y")
 
     blue()
     print("\n[+] Dependencias Instaladas [+]")
@@ -155,7 +158,7 @@ def polybar():
     print("\n[+] Instalando polybar [+]")
     green()
     print("\n")
-    # Clona el r
+
     # Clona el repo de polybar
     os.system("git clone --recursive https://github.com/polybar/polybar")
     os.system("mv polybar/* .")
@@ -167,7 +170,7 @@ def polybar():
     os.system("sudo make install")
 
     # Elimina los archivos de polybar
-    os.system("sudo rm -r *.sh *.md *.txt *.json .cmake bin cmake doc include libs Makefile tests CMakeFiles common contrib generated-sources lib LICENSE src")
+    os.system("sudo rm -r *.sh *.md *.txt *.json *.cmake bin cmake doc include libs Makefile tests CMakeFiles common contrib generated-sources lib LICENSE src")
 
     blue()
     print("\n[+] Polybar Instalado [+]")

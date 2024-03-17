@@ -26,9 +26,9 @@ def white():
     stdout.write(WHITE)
 
 def menu():
-    red()
-    print("\n[+] Seleciona el tema de su preferencias [+]")
     blue()
+    print("\n[+] Seleciona el tema de su preferencias [+]")
+    green()
     print("\n1 -> s4vitar 2021 ")
     print("\n2 -> s4vitar 2023 ")
     print("\n3 -> rrmx 2023 ")
@@ -46,9 +46,10 @@ def menu():
         exit()
 
 def s4vitar2021():
+    blue()
+    print("\n[+] Tema de s4vitar 2021 [+]")
     green()
-    print("\n[+] Tema de s4vitar 2021 [+]\n")
-
+    print("\n")
     # Actualizar sistema
     os.system("sudo apt update -y")
     os.system("sudo apt upgrade -y")
@@ -117,26 +118,28 @@ def s4vitar2021():
     # Resolucion HD High Definition 1.280 x 720 píxeles
     if expback == "1":
             os.system("mkdir -p ~/.config/polybar/")
-            os.system("wget ")
-            os.system("unzip ")
+            os.system("wget https://github.com/rrmx/dotfiles/releases/download/kali/s4vitar_2021.zip")
+            os.system("unzip s4vitar_2021.zip")
+            os.system("mv HD polybar")
             os.system("cp -rf polybar ~/.config/")
             os.system("sudo rm -r /usr/share/fonts/truetype/*.ttf")
             os.system("sudo rm -r /usr/share/fonts/truetype/*.otf")
             os.system("sudo cp -f ~/.config/polybar/fonts/* /usr/share/fonts/truetype")
             os.system("fc-cache -v")
-            os.system("sudo rm -r ")
+            os.system("sudo rm -r FHD polybar QHD s4vitar_2021.zip UHD")
             
     # Resolucion FHD Full HD o Full High Definition 1.920 x 1.080 píxeles
     if expback == "2":
             os.system("mkdir -p ~/.config/polybar/")
-            os.system("wget ")
-            os.system("unzip ")
+            os.system("wget https://github.com/rrmx/dotfiles/releases/download/kali/s4vitar_2021.zip")
+            os.system("unzip s4vitar_2021.zip")
+            os.system("mv FHD polybar")
             os.system("cp -rf polybar ~/.config/")
             os.system("sudo rm -r /usr/share/fonts/truetype/*.ttf")
             os.system("sudo rm -r /usr/share/fonts/truetype/*.otf")
             os.system("sudo cp -f ~/.config/polybar/fonts/* /usr/share/fonts/truetype")
             os.system("fc-cache -v")
-            os.system("sudo rm -r ")
+            os.system("sudo rm -r HD polybar QHD s4vitar_2021.zip UHD")
             
     # Resolucion QHD Quad High Definition 2.560 x 1.440 píxeles
     if expback == "3":
