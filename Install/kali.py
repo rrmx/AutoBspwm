@@ -134,15 +134,18 @@ def picom():
     # Clona el repo de picom
     os.system("git clone https://github.com/yshui/picom.git")
     os.system("mv picom/* .")
+    os.system("mv picom/.* . ")
     os.system("sudo rm -r picom/")
-    os.system("meson --buildtype=release . build")
+    os.system("git submodule update --init --recursive")
+    os.system("meson setup build")
     os.system("ninja -C build")
 
     # Hace el build de picom
     os.system("sudo ninja -C build install")
 
     # Elimina los archivos de picom
-    os.system("sudo rm -r *.md *.nix *.build *.txt *.glsl *.lock *.spdx *.conf *.desktop bin build CONTRIBUTORS COPYING dbus-examples Doxyfile LICENSES man media meson src subprojects tests")
+    os.system("sudo rm -r *.md *.nix *.build *.txt *.glsl *.lock *.spdx *.conf *.desktop .builds .circleci .clang-format .clang-tidy .editorconfig .git .github .gitignore")
+    os.system("sudo rm -r bin build CONTRIBUTORS COPYING dbus-examples Doxyfile LICENSES man media meson src subprojects tests ")
 
     blue()
     print("\n[+] Picom Instalado [+]")
