@@ -167,8 +167,7 @@ def polybar():
     os.system("sudo make install")
 
     # Elimina los archivos de polybar
-    os.system("sudo rm -r bin cmake doc include libs Makefile tests CMakeFiles common contrib generated-sources lib LICENSE src")
-    os.system("sudo rm -r *.sh *.md *.txt *.json .cmake ")
+    os.system("sudo rm -r *.sh *.md *.txt *.json .cmake bin cmake doc include libs Makefile tests CMakeFiles common contrib generated-sources lib LICENSE src")
 
     blue()
     print("\n[+] Polybar Instalado [+]")
