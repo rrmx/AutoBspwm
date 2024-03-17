@@ -1,4 +1,6 @@
 import os
+import colorama
+from colorama import Fore, Back, Style
 from sys import stdout
 
 def red():
@@ -59,9 +61,10 @@ def menu():
         exit()
 
 def dependecias():
-    green()
+    red()
     print("\n[+] Instalando Dependencias [+]\n")
 
+    white()
     # Actualizar sistema
     os.system("sudo apt update -y")
     os.system("sudo apt upgrade -y")
