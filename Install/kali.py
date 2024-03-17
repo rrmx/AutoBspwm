@@ -87,7 +87,7 @@ def dependecias():
 
 def bspwm():
     blue()
-    print("\n[+] Instalando bspwm [+]\n")
+    print("\n[+] Instalando bspwm [+]")
     green()
     print("\n")
     # Clona el repo de bspwm
@@ -102,7 +102,7 @@ def bspwm():
     # Elimina los archivos de bspwm
     os.system("sudo rm -r *.o bspc bspwm artworks contrib doc examples LICENSE Makefile README.md Sourcedeps src tests VERSION")
 
-    red()
+    blue()
     print("\n[+] Bspwm Instalado [+]")
 
 def sxhkd():
@@ -130,6 +130,7 @@ def picom():
     print("\n[+] Instalando picom [+]")
     green()
     print("\n")
+
     # Clona el repo de picom
     os.system("git clone https://github.com/yshui/picom.git")
     os.system("mv picom/* .")
@@ -143,12 +144,12 @@ def picom():
     # Elimina los archivos de picom
     os.system("sudo rm -r *.md *.txt *.spdx *.lock *.glsl *.nix *.build bin CONTRIBUTORS meson build COPYING src dbus-examples LICENSES subprojects tests Doxyfile man media picom.sample.conf compton.desktop picom-dbus.desktop picom.desktop")
 
-    red()
-    print("\n[+] Picom Instalado [+]\n")
+    blue()
+    print("\n[+] Picom Instalado [+]")
 
 def polybar():
-    red()
-    print("\n[+] Instalando polybar [+]\n")
+    blue()
+    print("\n[+] Instalando polybar [+]")
     green()
     print("\n")
     # Clona el r
@@ -166,8 +167,8 @@ def polybar():
     os.system("sudo rm -r bin cmake doc include libs Makefile tests CMakeFiles common contrib generated-sources lib LICENSE src")
     os.system("sudo rm -r *.sh *.md *.txt *.json .cmake ")
 
-    red()
-    print("\n[+] Polybar Instalado [+]\n")
+    blue()
+    print("\n[+] Polybar Instalado [+]")
 
 if __name__ == '__main__':
     id = os.getuid()

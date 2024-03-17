@@ -40,7 +40,7 @@ def menu():
     print(banner)
     blue()
     print("\n[+] SELECCIONE SU SISTEMA OPERATIVO [+]")
-    yellow()
+    green()
     print("\n1 -> Kali Linux ")
     print("\n2 -> Parrot OS ")
     print("\n3 -> Arch Linux ")
@@ -58,7 +58,6 @@ def menu():
         exit()
 
 def kali_linux():
-    green()
 
     # Instalcion y temas de kali linx
     expback = input("\n Kali Linux ( 1 --> Instalacion )  ( 2 --> Temas ) ( 3 --> Todo ). 1/2/3 -> ")
