@@ -102,12 +102,14 @@ def bspwm():
     # Elimina los archivos de bspwm
     os.system("sudo rm -r *.o bspc bspwm artworks contrib doc examples LICENSE Makefile README.md Sourcedeps src tests VERSION")
 
-    print("\n[+] Bspwm Instalado [+]\n")
+    red()
+    print("\n[+] Bspwm Instalado [+]")
 
 def sxhkd():
+    red()
+    print("\n[+] Instalando sxhkd [+]")
     green()
-    print("\n[+] Instalando sxhkd [+]\n")
-
+    print("\n")
     # Clona el repo de sxhkd
     os.system("git clone https://github.com/baskerville/sxhkd.git")
     os.system("mv sxhkd/* .")
@@ -120,12 +122,14 @@ def sxhkd():
     # Elimina los archivos de sxhkd
     os.system("sudo rm -r *.o *.md contrib doc examples LICENSE Makefile Sourcedeps src sxhkd  VERSION")
 
-    print("\n[+] Sxhkd Instalado [+]\n")
+    red()
+    print("\n[+] Sxhkd Instalado [+]")
 
 def picom():
+    red()
+    print("\n[+] Instalando picom [+]")
     green()
-    print("\n[+] Instalando picom [+]\n")
-
+    print("\n")
     # Clona el repo de picom
     os.system("git clone https://github.com/yshui/picom.git")
     os.system("mv picom/* .")
@@ -139,12 +143,15 @@ def picom():
     # Elimina los archivos de picom
     os.system("sudo rm -r *.md *.txt *.spdx *.lock *.glsl *.nix *.build bin CONTRIBUTORS meson build COPYING src dbus-examples LICENSES subprojects tests Doxyfile man media picom.sample.conf compton.desktop picom-dbus.desktop picom.desktop")
 
+    red()
     print("\n[+] Picom Instalado [+]\n")
 
 def polybar():
-    green()
+    red()
     print("\n[+] Instalando polybar [+]\n")
-
+    green()
+    print("\n")
+    # Clona el r
     # Clona el repo de polybar
     os.system("git clone --recursive https://github.com/polybar/polybar")
     os.system("mv polybar/* .")
@@ -159,6 +166,7 @@ def polybar():
     os.system("sudo rm -r bin cmake doc include libs Makefile tests CMakeFiles common contrib generated-sources lib LICENSE src")
     os.system("sudo rm -r *.sh *.md *.txt *.json .cmake ")
 
+    red()
     print("\n[+] Polybar Instalado [+]\n")
 
 if __name__ == '__main__':
