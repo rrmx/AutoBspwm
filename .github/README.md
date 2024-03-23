@@ -1,6 +1,6 @@
 # Kali Linux Bspwm
 
-- Este escripts esta testeado para Kali Linux ; Parrot OS y Arch Linux
+- Este escripts esta testeado para Kali Linux
 
 ## Caracteristicas
 
@@ -11,9 +11,15 @@
 1 . Clonamos el sugiente repositorio:
 
 ```bash
-git clone https://github.com/rrmx/AutoBspwm
-cd AutoBspwm/
-python3 main.py
+git https://github.com/rrmx/BSPWMKali
+```
+
+```bash
+cd BSPWMKali
+```
+
+```bash
+python3
 ```
 
 ## Temas
