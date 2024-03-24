@@ -58,10 +58,13 @@ def menu():
         exit()
 
 def s4vitar2021():
+
     blue()
     print("\n[+] Tema de s4vitar 2021 [+]")
+
     green()
     print("\n")
+
     # Actualizar sistema
     os.system("sudo apt update -y")
     os.system("sudo apt upgrade -y")
