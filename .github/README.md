@@ -8,18 +8,28 @@
 
 **Peviamente a la instalacion escojemos el tema a instalar [Temas](#temas):**
 
-1 . Clonamos el sugiente repositorio:
+- Clonamos el sugiente repositorio:
 
 ```bash
-git https://github.com/rrmx/BSPWMKali
+git clone https://github.com/rrmx/Kali-Bspwm.git
 ```
 
-```bash
-cd BSPWMKali
-```
+- Nos metemos al directorio :
 
 ```bash
-python3
+cd Kali-Bspwm
+```
+
+- Instalacion de bspwm sxhkd picom polybar :
+
+```bash
+python3 install.py
+```
+
+- Temas de s4vitar rrmx y otros :
+
+```bash
+python3 themes.py
 ```
 
 ## Temas

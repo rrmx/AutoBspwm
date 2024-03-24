@@ -74,15 +74,15 @@ def s4vitar2021():
     os.system("sudo apt install bat lsd papirus-icon-theme i3lock-fancy -y")
 
     # Dependecias rofi
-    os.system("sudo apt install bison flex libstartup-notification0-dev check autotools-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y")
-    os.system("sudo apt install libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev -y")
+    #os.system("sudo apt install bison flex libstartup-notification0-dev check autotools-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y")
+    #os.system("sudo apt install libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev -y")
 
     # Fuentes Hack Ner Fonts
     os.system("sudo mkdir -p /usr/local/share/fonts")
-    os.system("wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip")
-    os.system("unzip Hack.zip")
+    os.system("wget https://github.com/rrmx/dotfiles/releases/download/Fonts/HackNerdFonts.zip")
+    os.system("unzip HackNerdFonts.zip")
     os.system("sudo cp -f *.ttf /usr/local/share/fonts/")
-    os.system("sudo rm -r Hack.zip *.md *.ttf")
+    os.system("sudo rm -r HackNerdFonts.zip *.md *.ttf")
 
     # Instalando fastTCPscan.go
     os.system("wget https://raw.githubusercontent.com/rrmx/dotfiles/dotfiles/Kali-Linux/bspwm/s4vitar/2021/scripts/fastTCPscan.go")
@@ -133,7 +133,7 @@ def s4vitar2021():
     # Resolucion HD High Definition 1.280 x 720 píxeles
     if expback == "1":
             os.system("mkdir -p ~/.config/polybar/")
-            os.system("wget https://github.com/rrmx/dotfiles/releases/download/kali/s4vitar_2021.zip")
+            os.system("wget https://github.com/rrmx/dotfiles/releases/download/s4vitar_2021/s4vitar_2021.zip")
             os.system("unzip s4vitar_2021.zip")
             os.system("mv HD polybar")
             os.system("cp -rf polybar ~/.config/")
@@ -146,7 +146,7 @@ def s4vitar2021():
     # Resolucion FHD Full HD o Full High Definition 1.920 x 1.080 píxeles
     if expback == "2":
             os.system("mkdir -p ~/.config/polybar/")
-            os.system("wget https://github.com/rrmx/dotfiles/releases/download/kali/s4vitar_2021.zip")
+            os.system("wget https://github.com/rrmx/dotfiles/releases/download/s4vitar_2021/s4vitar_2021.zip")
             os.system("unzip s4vitar_2021.zip")
             os.system("mv FHD polybar")
             os.system("cp -rf polybar ~/.config/")
