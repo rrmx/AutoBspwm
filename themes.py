@@ -39,12 +39,15 @@ def menu():
     red()
     print(banner)
     blue()
-    print("\n[+] Seleciona el tema de su preferencias [+]")
-    green()
+    time.sleep(1)
     print("\n1 -> s4vitar 2021 ")
+    time.sleep(1)
     print("\n2 -> s4vitar 2023 ")
+    time.sleep(1)
     print("\n3 -> rrmx 2023 ")
+    time.sleep(1)
     print("\n4 -> Salir ")
+    time.sleep(1)
 
     option = input("\n-->> ")
 
@@ -72,11 +75,7 @@ def s4vitar2021():
     # Dependencias del tema
     os.system("sudo apt install kitty rofi feh scrot acpi ranger xclip wmname scrub imagemagick caja neofetch -y")
     os.system("sudo apt install bat lsd papirus-icon-theme i3lock-fancy -y")
-
-    # Dependecias rofi
-    #os.system("sudo apt install bison flex libstartup-notification0-dev check autotools-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y")
-    #os.system("sudo apt install libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev -y")
-
+    
     # Fuentes Hack Ner Fonts
     os.system("sudo mkdir -p /usr/local/share/fonts")
     os.system("wget https://github.com/rrmx/dotfiles/releases/download/Fonts/HackNerdFonts.zip")
@@ -208,7 +207,7 @@ def s4vitar2021():
 
     # Tema de rofi
     os.system("mkdir -p ~/.config/rofi/themes")
-    os.system("wget https://github.com/rrmx/dotfiles/releases/download/recursos/rofi-themes.zip")
+    os.system("wget ")
     os.system("unzip rofi-themes.zip")
     os.system("cp -f *.rasi ~/.config/rofi/themes")
     os.system("fc-cache -fv")
@@ -216,11 +215,13 @@ def s4vitar2021():
     os.system("sudo rm -r *.rasi rofi-themes.zip")
 
     # Instalacion de powerless10k
+    os.system("mkdir -p ~/.powerlevel10k")
     os.system("sudo rm -r ~/.powerlevel10k") 
     os.system("git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k")
     os.system("echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc")
 
     # Instalacion de powerlevel10k para root
+    os.system("mkdir -p /root/.powerlevel10k")
     os.system("sudo rm -r /root/.powerlevel10k")
     os.system("sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.powerlevel10k")
 
@@ -245,11 +246,13 @@ def s4vitar2021():
     os.system("sudo usermod --shell /usr/bin/zsh $USER")
 
     # Instalacion de fzf
+    os.system("mkdir -p ~/.fzf")
     os.system("sudo rm -r ~/.fzf")
     os.system("git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf")
     os.system("~/.fzf/install")
 
     # Instalacion de fzf para root
+    os.system("mkdir -p /root/.fzf")
     os.system("sudo rm -r /root/.fzf")
     os.system("sudo git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf")
     os.system("sudo /root/.fzf/install")
@@ -419,6 +422,11 @@ def rrmx2023():
     os.system("sudo apt install rofi papirus-icon-theme feh ranger xclip wmname caja neofetch -y")
     os.system("sudo apt install bat lsd kitty scrot acpi scrub imagemagick i3lock-fancy -y")
     os.system("sudo apt install brightnessctl alsa-utils pulseaudio pamixer -y")
+    
+    # Dependecias rofi
+    #os.system("sudo apt install bison flex libstartup-notification0-dev check autotools-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y")
+    #os.system("sudo apt install libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev -y")
+
 
     print("\n[+] INSTALACIÓN TERMINADA [+]\n")
 
