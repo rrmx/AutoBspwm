@@ -1,4 +1,5 @@
 import os
+import time
 from sys import stdout
 
 def red():
@@ -26,27 +27,33 @@ def white():
     stdout.write(WHITE)
 
 banner = """
- ██╗ ███╗   ██╗ ███████╗ ████████╗  █████╗  ██╗      ██╗
- ██║ ████╗  ██║ ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║      ██║
- ██║ ██╔██╗ ██║ ███████╗    ██║    ███████║ ██║      ██║
- ██║ ██║╚██╗██║ ╚════██║    ██║    ██╔══██║ ██║      ██║
- ██║ ██║ ╚████║ ███████║    ██║    ██║  ██║ ███████╗ ███████╗
- ╚═╝ ╚═╝  ╚═══╝ ╚══════╝    ╚═╝    ╚═╝  ╚═╝ ╚══════╝ ╚══════╝
+██╗ ███╗   ██╗ ███████╗ ████████╗  █████╗  ██╗      ██╗
+██║ ████╗  ██║ ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║      ██║
+██║ ██╔██╗ ██║ ███████╗    ██║    ███████║ ██║      ██║
+██║ ██║╚██╗██║ ╚════██║    ██║    ██╔══██║ ██║      ██║
+██║ ██║ ╚████║ ███████║    ██║    ██║  ██║ ███████╗ ███████╗
+╚═╝ ╚═╝  ╚═══╝ ╚══════╝    ╚═╝    ╚═╝  ╚═╝ ╚══════╝ ╚══════╝
 """
 
 def menu():
     red()
     print(banner)
     blue()
-    print("\n[+] Selecciona lo que quieres instalar [+]")
-    green()
+    time.sleep(1)
     print("\n1 -> Instalar Dependencias ")
+    time.sleep(1)
     print("\n2 -> Instalar Bspwm ")
+    time.sleep(1)
     print("\n3 -> Instalar Sxhkd ")
+    time.sleep(1)
     print("\n4 -> Instalar Picom ")
+    time.sleep(1)
     print("\n5 -> Instalar Polybar ")
+    time.sleep(1)
     print("\n6 -> Instalar Todo ")
+    time.sleep(1)
     print("\n7 -> Salir ")
+    time.sleep(1)
 
     option = input("\n-->> ")
 
@@ -70,10 +77,13 @@ def menu():
         exit()
 
 def dependecias():
+
     blue()
     print("\n[+] Instalando Dependencias [+]")
+
     green()
     print("\n")
+
     # Actualizar sistema
     os.system("sudo apt update -y")
     os.system("sudo apt upgrade -y")
@@ -100,10 +110,21 @@ def dependecias():
     print("\n[+] Dependencias Instaladas [+]")
 
 def bspwm():
+
     blue()
     print("\n[+] Instalando bspwm [+]")
+
     green()
     print("\n")
+
+    # Actualizar sistema
+    os.system("sudo apt update -y")
+    os.system("sudo apt upgrade -y")
+
+    # Dependencias
+    #os.system("sudo apt-get install gcc make pkg-config xinit git libxcb1-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-ewmh-dev libxcb-icccm4-dev -y")
+    os.system("sudo apt-get install git make libc6 libxcb-ewmh2 libxcb-icccm4 libxcb-keysyms1 libxcb-randr0 libxcb-shape0 libxcb-util1 libxcb-xinerama0 libxcb1 x11-utils sxhkd lemonbar xdo -y")
+
     # Clona el repo de bspwm
     os.system("git clone https://github.com/baskerville/bspwm.git")
     os.system("mv bspwm/* .")
