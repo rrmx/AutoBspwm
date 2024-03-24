@@ -80,7 +80,6 @@ def dependecias():
 
     blue()
     print("\n[+] Instalando Dependencias [+]")
-
     green()
     print("\n")
 
@@ -110,20 +109,10 @@ def dependecias():
     print("\n[+] Dependencias Instaladas [+]")
 
 def bspwm():
-
     blue()
     print("\n[+] Instalando bspwm [+]")
-
-    green()
+    white()
     print("\n")
-
-    # Actualizar sistema
-    os.system("sudo apt update -y")
-    os.system("sudo apt upgrade -y")
-
-    # Dependencias
-    #os.system("sudo apt-get install gcc make pkg-config xinit git libxcb1-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-ewmh-dev libxcb-icccm4-dev -y")
-    os.system("sudo apt-get install git make libc6 libxcb-ewmh2 libxcb-icccm4 libxcb-keysyms1 libxcb-randr0 libxcb-shape0 libxcb-util1 libxcb-xinerama0 libxcb1 x11-utils sxhkd lemonbar xdo -y")
 
     # Clona el repo de bspwm
     os.system("git clone https://github.com/baskerville/bspwm.git")
@@ -145,6 +134,7 @@ def sxhkd():
     print("\n[+] Instalando sxhkd [+]")
     green()
     print("\n")
+
     # Clona el repo de sxhkd
     os.system("git clone https://github.com/baskerville/sxhkd.git")
     os.system("mv sxhkd/* .")
