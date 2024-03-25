@@ -60,10 +60,8 @@ def menu():
         exit()
 
 def s4vitar2021():
-
     blue()
     print("\n[+] Tema de s4vitar 2021 [+]")
-
     green()
     print("\n")
 
@@ -140,7 +138,7 @@ def s4vitar2021():
             os.system("sudo cp -f ~/.config/polybar/fonts/* /usr/share/fonts/truetype")
             os.system("fc-cache -v")
             os.system("sudo rm -r FHD polybar QHD s4vitar_2021.zip UHD")
-            
+
     # Resolucion FHD Full HD o Full High Definition 1.920 x 1.080 píxeles
     if expback == "2":
             os.system("mkdir -p ~/.config/polybar/")
@@ -153,7 +151,7 @@ def s4vitar2021():
             os.system("sudo cp -f ~/.config/polybar/fonts/* /usr/share/fonts/truetype")
             os.system("fc-cache -v")
             os.system("sudo rm -r HD polybar QHD s4vitar_2021.zip UHD")
-            
+
     # Resolucion QHD Quad High Definition 2.560 x 1.440 píxeles
     if expback == "3":
             os.system("mkdir -p ~/.config/polybar/")
@@ -273,7 +271,7 @@ def s4vitar2021():
 def s4vitar2023():
     print("\n[+] Tema de s4vitar 2023 [+]\n")
     green()
-
+    
     # Actualizar sistema
     os.system("sudo apt update -y")
     os.system("sudo apt upgrade -y")
@@ -425,7 +423,6 @@ def rrmx2023():
     # Dependecias rofi
     #os.system("sudo apt install bison flex libstartup-notification0-dev check autotools-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y")
     #os.system("sudo apt install libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev -y")
-
 
     print("\n[+] INSTALACIÓN TERMINADA [+]\n")
 
